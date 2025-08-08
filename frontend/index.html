@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saga Bus Timer</title>
+    <meta name="description" content="佐賀県の高速バス時刻表・カウントダウンアプリ" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6M9Z80J5T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+      gtag('config', 'G-X6M9Z80J5T')
+    </script>
+  </head>
+  <body>
+    <header class="container">
+      <hgroup>
+        <h1>🚌 Saga Bus Timer</h1>
+        <p>佐賀県の高速バス時刻表＆カウントダウンアプリ</p>
+      </hgroup>
+    </header>
+    <main class="container">
+      <div id="app"></div>
+      <div>
+        <small>
+          使用データ
+          <br />
+          <a href="http://opendata.sagabus.info" target="_blank">
+            佐賀県の路線バス情報のデータ &copy; 2018-2025 佐賀県 | CC BY 4.0
+          </a>
+        </small>
+      </div>
+    </main>
+    <footer class="container">
+      <small>
+        &copy; 2020-2025
+        <a href="https://orangeliner.net" target="_blank">orangeliner.net</a>
+        / egamasa
+      </small>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
